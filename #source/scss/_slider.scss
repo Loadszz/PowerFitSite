@@ -31,7 +31,7 @@
 .slick-slide.slick-cloned {
 }
 /* Стрелка */
-.highlights-slider__body .slick-arrow {
+.slick-arrow {
 	position: absolute;
 	top: 208px;
 	margin: -95px 0px 0px 28px;
@@ -41,14 +41,14 @@
 	height: 50px;
 }
 /* Стрелка влево */
-.highlights-slider__body .slick-arrow.slick-prev {
+.slick-arrow.slick-prev {
 	background: url(img/previous.png) 0 0 / 100% no-repeat;
 	left: 0;
 	border: 7px solid #96afbb;
 	border-radius: 50%;
 }
 /* Стрелка вправо */
-.highlights-slider__body .slick-arrow.slick-next {
+.slick-arrow.slick-next {
 	background: url(img/next.png) 0 0 / 100% no-repeat;
 	left: 0;
 	top: 126px;

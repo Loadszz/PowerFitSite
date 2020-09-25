@@ -4,17 +4,17 @@
 	top: 0;
 	left: 0;
 	z-index: 50;
-	&::after {
-		content: "";
-		position: absolute;
-		left: 0;
-		width: 100%;
-		height: 4px;
-		background-color: #ffffff;
-		bottom: -4px;
-		opacity: 0.9;
-		border-radius: 3px;
-	}
+	// &::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	height: 4px;
+	// 	background-color: #ffffff;
+	// 	bottom: -4px;
+	// 	opacity: 0.9;
+	// 	border-radius: 3px;
+	// }
 }
 
 .header::before {
@@ -24,12 +24,11 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000000;
 	opacity: 0.8;
 	z-index: 2;
 }
 
-.row-header {
+.header__body {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -43,12 +42,11 @@
 		height: 50px;
 	}
 }
-.row-header__logo {
+.header__logo {
 	flex: 0 0 100px;
 	overflow: hidden;
 	position: relative;
 	z-index: 3;
-	margin: 0px 0px 0px 32px;
 	img {
 		max-width: 100%;
 		display: block;
@@ -136,9 +134,9 @@
 	}
 	li {
 		list-style: none;
-		margin: 0px 0px 0px 31px;
+		margin: 0px 100px 0px 0px;
 		&:last-child {
-			margin: 0px 52px 0px 31px;
+			margin: 0px 40px 0px 0px;
 		}
 		@media (max-width: 767px) {
 			margin: 0px 0px 20px 10px;
@@ -149,33 +147,34 @@
 	}
 }
 .header__link {
-	color: #fff;
-	font-family: Montserrat;
+	font-family: Poppins;
 	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 21px;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 27px;
+	text-transform: uppercase;
+	color: #ffffff;
 	position: relative;
 	@media (max-height: 767px) {
 		font-size: 10px;
 	}
-	&:hover {
-		&::after {
-			content: "";
-			position: absolute;
-			left: 0;
-			width: 100%;
-			height: 4px;
-			background-color: #71acff;
-			bottom: -43px;
-			border-radius: 3px;
-			@media (max-width: 767px) {
-				bottom: -13px;
-			}
-			@media (max-height: 767px) {
-				bottom: -13px;
-				height: 2px;
-			}
-		}
-	}
+	// &:hover {
+	// 	&::after {
+	// 		content: "";
+	// 		position: absolute;
+	// 		left: 0;
+	// 		width: 100%;
+	// 		height: 4px;
+	// 		background-color: #71acff;
+	// 		bottom: -43px;
+	// 		border-radius: 3px;
+	// 		@media (max-width: 767px) {
+	// 			bottom: -13px;
+	// 		}
+	// 		@media (max-height: 767px) {
+	// 			bottom: -13px;
+	// 			height: 2px;
+	// 		}
+	// 	}
+	// }
 }

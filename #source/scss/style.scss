@@ -3,10 +3,10 @@
 @import "_fonts";
 @import "_header";
 @import "_slider";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800;900&family=Poppins:wght@800;900&display=swap");
 
 // font-family: 'Montserrat', sans-serif;
-// font-family: 'Playfair Display', serif;
+// font-family: 'Poppins', sans-serif;
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .ibg {
@@ -63,5 +63,159 @@
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.banner {
+	&__body {
+		position: relative;
+		height: 100%;
+	}
 
-/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #000;
+	}
+
+	&__inner {
+		padding: 370px 0px 200px 0px;
+	}
+}
+.inner-banner {
+	position: relative;
+	text-align: center;
+	justify-content: center;
+	&__button {
+		display: inline-block;
+		font-family: "Poppins", sans-serif;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 18px;
+		line-height: 130%;
+		letter-spacing: 0.03em;
+		color: #ffae35;
+		border: 1px solid #ffae35;
+		border-radius: 5px;
+		padding: 18.25px 34px 19.26px 34px;
+		margin: 0px 0px 150px 0px;
+	}
+
+	&__text {
+		font-family: "Poppins", sans-serif;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 48px;
+		line-height: 100%;
+		color: #ffffff;
+		opacity: 0.3;
+		text-align: right;
+	}
+}
+.btn {
+	display: inline-block;
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 130%;
+	letter-spacing: 0.03em;
+	color: #ffae35;
+	border: 1px solid #ffae35;
+	border-radius: 5px;
+	padding: 18.25px 34px 19.26px 34px;
+	margin: 0px 0px 150px 0px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.better {
+	background: #ffae35;
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		flex: 0 1 50%;
+	}
+
+	&__left {
+		position: relative;
+		height: 100%;
+	}
+
+	&__right {
+	}
+}
+
+.left-better {
+	&__tittle {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 64px;
+		line-height: 130%;
+		letter-spacing: 0.03em;
+		color: #ffffff;
+		transform: rotate(-90deg);
+	}
+
+	&__photo1 {
+		flex: 1 1 600px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+	&__photo2 {
+		flex: 1 1 600px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 20;
+	}
+	&__photo3 {
+		flex: 1 1 600px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 30;
+	}
+}
+.right-better {
+	&__tittle {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 64px;
+		line-height: 130%;
+		letter-spacing: 0.03em;
+		color: #000000;
+		margin: 27px 0px 204px 0px;
+	}
+
+	&__text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 145%;
+		display: flex;
+		align-items: center;
+		text-align: right;
+		letter-spacing: 0.005em;
+		color: #000000;
+		margin: 0px 0px 50px 0px;
+		&_white {
+			color: #ffffff;
+		}
+	}
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
