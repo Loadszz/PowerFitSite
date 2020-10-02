@@ -287,6 +287,13 @@
 		letter-spacing: 0.09em;
 		color: #ffffff;
 		margin: 0px 0px 88px 0px;
+		@media (max-width: 922px) {
+			text-align: center;
+		}
+		@media (max-width: 767px) {
+			font-size: 14px;
+			margin: 0px 0px 28px 0px;
+		}
 	}
 }
 .tittle {
@@ -297,11 +304,18 @@
 	line-height: 130%;
 	letter-spacing: 0.09em;
 	color: #ffffff;
+	@media (max-width: 992px) {
+		font-size: 44px;
+		text-align: center;
+	}
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
 }
 .form-request {
 	&__input {
 		display: flex;
-		width: 600px;
+		width: 100%;
 		height: 60px;
 		margin: 0px 0px 32px 0px;
 		padding: 0px 0px 0px 24px;
@@ -319,6 +333,11 @@
 		border: 3px solid #ffae35;
 		box-sizing: border-box;
 		margin: 44px 0px 88px 0px;
+		@media (max-width: 767px) {
+			font-size: 12px;
+			padding: 10px 30px 10px 30px;
+			margin: 24px 0px 0px 0px;
+		}
 		&:hover {
 			font-family: "Poppins";
 			font-style: normal;
