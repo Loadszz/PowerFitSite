@@ -832,6 +832,12 @@ h6 {
   padding: 0px 0px 58.6% 0px;
 }
 
+@media (max-width: 767px) {
+  .body-direction__inner {
+    padding: 0px 0px 100% 0px;
+  }
+}
+
 .body-direction__photo {
   position: absolute;
   width: 100%;
@@ -866,6 +872,13 @@ h6 {
   .body-direction__tittle {
     font-size: 18px;
     padding: 9px;
+  }
+}
+
+@media (max-width: 767px) {
+  .body-direction__tittle {
+    font-size: 24px;
+    padding: 13px;
   }
 }
 

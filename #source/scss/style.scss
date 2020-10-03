@@ -398,6 +398,9 @@
 		position: relative;
 		height: 100%;
 		padding: 0px 0px 58.6% 0px;
+		@media (max-width: 767px) {
+			padding: 0px 0px 100% 0px;
+		}
 	}
 
 	&__photo {
@@ -428,6 +431,10 @@
 		@media (max-width: 992px) {
 			font-size: 18px;
 			padding: 9px;
+		}
+		@media (max-width: 767px) {
+			font-size: 24px;
+			padding: 13px;
 		}
 		&_q {
 			top: 137px;
